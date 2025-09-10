@@ -1,0 +1,97 @@
+.start {
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: fit-content;
+    /* ширина по содержимому */
+    margin: 0 auto;
+    /* центрирует блок по горизонтали */
+    text-align: center;
+    /* выравнивает текст внутри по центру */
+
+}
+
+.start::before {
+    content: "ModyDev Academy";
+    display: block;
+    color: blue;
+}
+
+.finish {
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: fit-content;
+    /* ширина по содержимому */
+    margin: 0 auto;
+    /* центрирует блок по горизонтали */
+    text-align: center;
+    /* выравнивает текст внутри по центру */
+}
+
+.finish::before {
+    content: "Псевдоэлементы в CSS используются для стилизации определённых частей элемента, которые не могут быть выделены с помощью обычных селекторов. Они позволяют добавлять стили к определённым частям содержимого элемента или вставлять дополнительное содержимое без изменения HTML-кода";
+    display: block;
+    color: red;
+}
+
+.h1Start{
+     padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: fit-content;
+}
+
+.h1Start::after{
+    content: "👍👌";
+    color: blueviolet;
+}
+
+.h2Start{
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    width: fit-content;  
+}
+
+.h2Start::after{
+    content: "╰(*°▽°*)╯╰(*°▽°*)╯╰(*°▽°*)╯";
+    color: green;
+}
+
+.decorative-block {
+  position: relative;
+  padding: 30px 20px;
+  margin: 40px auto;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  text-align: center;
+  color: #333;
+}
+
+/* Декоративная линия сверху */
+.decorative-block::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(to right, #2196f3, #21cbf3);
+  border-radius: 2px;
+}
+
+/* Декоративная линия снизу */
+.decorative-block::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(to right, #21cbf3, #2196f3);
+  border-radius: 2px;
+}
